@@ -1,0 +1,255 @@
+#bodyPic {
+  background-image: url("/modal-img/pexels-freestocksorg-457701.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 450px;
+  text-align: center;
+  font-size: larger;
+  font-family: "Times New Roman", Times, serif;
+  color: red;
+}
+div h4 {
+  font-family: "Playfair Display", serif;
+  margin-left: 12rem;
+}
+#rmCheckbox {
+  color: rgb(148, 40, 58);
+  margin-right: 14rem;
+}
+#nav {
+  color: pink;
+}
+
+.jumbotron {
+  background-image: url("/modal-img/flower.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 20px;
+  color: antiquewhite;
+  text-align: center;
+  height: 30rem;
+  font-family: 'Playfair Display', serif;
+}
+.navbar{
+    background-color: black;
+    
+}
+#jumboP{
+    color: rgb(20, 15, 17);
+    font-weight: bold;
+    font-size: 22px;
+    font-family: 'Playfair Display', serif;
+    
+
+}
+.btn{
+float: right;
+ 
+   background-color: transparent;
+   color: rgb(233, 136, 136);
+    
+}
+.btn:hover{
+    background-color: transparent;
+}
+#bdyBGColor{
+    background-color: rgb(82, 10, 10)
+}
+
+
+#brandSolon{
+    color: red;
+    font-size: 25px;
+}
+
+#book {
+  margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+*{
+
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+section{
+    padding: 10rem;
+    background: #fff;
+}
+.heading{
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    letter-spacing: 3px;
+    margin-right: -3px;
+    margin-bottom: 5rem;
+    text-align: center;
+    color: #333;
+    position: relative;
+}
+.heading::after{
+    content:"" ;
+    width: 10rem;
+    height: .8rem;
+    background-color: #45e19f;
+    position: absolute;
+    bottom: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2rem;
+}
+.card-wrapper{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+   
+}
+
+.card{
+    width: 32rem ;
+    background-color: #ebeef8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0px;
+    box-shadow: .5rem .5rem .3rem rgba(0,0,0,0.2);
+    
+}
+.card .card-img{
+    width: 100%;
+    height: 26rem;
+    object-fit: cover;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 78%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 78%, 0% 100%);
+
+}
+.profile-img{
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: -10rem;
+    border: 1rem solid #ebeef8;
+     z-index: 999;
+}
+.card h1{
+    font-size: 2.5rem;
+    color: #333;
+    margin:1.5rem 0
+
+}
+.job-title{
+    color: #777;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+.about{
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+    text-align: center;
+    color:#333
+
+}
+.card .btn{
+    padding: 1rem 2.5rem;
+    background-color: #445ae3;
+    border-radius: 2rem;
+    margin: 1rem 0;
+    text-transform: uppercase;
+    color: #eee;
+    font-size: 1.4rem;
+    transition: all .5s;
+}
+.card .btn:hover{
+    transform: translateY(-2px);
+    box-shadow: .5rem .5rem 2rem rgba(0,0,0,.2);
+
+}
+.card .btn:active{
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+
+.social-media{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem 0;
+    margin-top: 1.5rem;
+    border-top: 1px solid rgba(0,0,0,.1);
+
+}
+.social-media i{
+    font-size: 3rem;
+
+}
+.fa-facebook-square{
+    color:#3b5999
+}
+.fa-twitter-square{
+    color:#55acee;
+
+}
+.fa-instagram{
+    color: #e6683c
+}
+.fa-facebook-square:hover,
+.fa-twitter-square:hover,
+.fa-instagram:hover{
+    color: #45e19f;
+}
+@media screen and (min-with: 500px) {
+    .card-wrapper{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .card{
+        margin: 2rem 2rem;
+    }
+    @keyframes fadeIn{
+        from{
+            opacity: 0;
+        } to{
+            opacity: 1;
+        }
+        
+    }
+    .card:nth-child(1){
+        animation: fadeIn .5s .5s backwards;
+    }
+    .card:nth-child(2){
+        animation: fadeIn .5s .5s backwards;
+    }
+
+}
+.card:hover{
+    transform: scale(1.1);
+}
+    
+   
+    
+

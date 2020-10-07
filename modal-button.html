@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- build:css css/main.css -->
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-social/bootstrap-social.css"
+    />
+    <link rel="stylesheet" href="/modal.css" />
+
+    <!-- endbuild -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+  </head>
+  <body id="bdyBGColor">
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top">
+      <a id="brandSolon" class="navbar-brand" href="#">Beauty Salon</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav justify-content-around" style="width: 100%">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Women Styles</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Bro Styles</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+        </ul>
+      </div>
+
+      <!--modal button-->
+      <button
+        type="button"
+        class="btn btn-danger"
+        data-toggle="modal"
+        data-target="#memberModal"
+      >
+        Member Login
+      </button>
+      <button id="book" class="btn btn-primary">Book a Salan date</button>
+    </nav>
+
+    <!--modal-->
+    <div class="modal" id="memberModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!--modal-header-->
+          <div class="modal-header">
+            <h4>Log In</h4>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              data-target="modal"
+            >
+              &times;
+            </button>
+          </div>
+
+          <!--modal-body-->
+          <div id="bodyPic" class="modal-body">
+            <form>
+              <div class="form-row">
+                <div class="form-group col-12">
+                  <label class="sr-only" for="loginEmail">Email address</label>
+                  <input
+                    type="email"
+                    class="form-control form-control-sm"
+                    id="loginEmail"
+                    placeholder="Enter email"
+                  />
+                </div>
+                <div class="form-group col-12">
+                  <label class="sr-only" for="loginPassword">Password</label>
+                  <input
+                    type="password"
+                    class="form-control form-control-sm"
+                    id="loginPassword"
+                    placeholder="Password"
+                  />
+                </div>
+                <div class="col">
+                  <div id="rmCheckbox" class="form-check">
+                    <input class="form-check-input" type="checkbox" />
+                    <label class="form-check-label"> Remember me</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <button
+                  type="button"
+                  class="btn btn-secondary btn-sm ml-auto"
+                  data-dismiss="modal"
+                >
+                  Cancel
+                </button>
+                <button type="submit" class="btn btn-primary btn-sm ml-1">
+                  Sign in
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <!--modal footer-->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--jumbo-->
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="display-4">Treat Yourself and Feel Beautiful</h1>
+        <p class="lead"></p>
+        <hr class="my-4" />
+        <p id="jumboP">Relax and Enjoy the Experience</p>
+        <!--button-link to info on packages-->
+        <a
+          href="/packages.html"
+          button
+          type="button"
+          class="btn btn-outline-secondary btn-lg"
+          role="button "
+        >
+          Gallery
+        </a>
+      </div>
+    </div>
+
+    <section>
+      <div class="container">
+        <h1 class="heading">Our Stylist</h1>
+
+
+        <div class="card-wrapper">
+         
+          <div class="card">
+            <img
+              src="/modal-img/pexels-mark-g-2401539.jpg"
+              alt="card background:Chicago"
+              class="card-img"
+            />
+            <img
+              src="/modal-img/rowan-chestnut-m663zRzRe40-unsplash.jpg"
+              alt="profile image"
+              class="profile-img"
+            />
+            <h1>Stylist: Michelle</h1>
+            <p class="job-title">Lead Stylist</p>
+            <p class="about">Expert in modern hair styles.</p>
+            <a href="#" class="btn">contact</a>
+            <ul class="social-media">
+              <li>
+                <a href="#"><i class="fab fa-facebook-square"></i> </a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <img
+              src="/modal-img/pexels-mark-g-2401539.jpg"
+              alt="card background:Chicago"
+              class="card-img"
+            />
+            <img
+              src="/modal-img/matheus-ferrero-W7b3eDUb_2I-unsplash.jpg"
+              alt="profile image"
+              class="profile-img"
+            />
+            <h1>Stylist: Monica</h1>
+            <p class="job-title">Lead Stylist</p>
+            <p class="about">Expert in modern hair styles.</p>
+            <a href="#" class="btn">contact</a>
+            <ul class="social-media">
+              <li>
+                <a href="#"><i class="fab fa-facebook-square"></i> </a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+       
+        </div>
+      </div>
+    </section>
+
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/a96ab0b890.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
